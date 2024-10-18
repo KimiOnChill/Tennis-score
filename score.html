@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="tennis score app"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <head>
+        <title>
+            Tennis Score Application        
+        </title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+
+    <body>
+        
+        <div class="enter-info-container">
+            <input id="first-name" type="text" placeholder="First player`s name"/>
+            <input id="second-name" type="text" placeholder="Second player`s name"/><br>
+            <label><input type="radio" name="option" id="2-sets" value="2" checked /> 2 sets to win</label>
+            <label><input type="radio" name="option" id="3-sets" value="3" /> 3 sets to win</label>
+        </div>
+
+        <div class="serve">
+            <button type="button" class="buttons" id="first-to-serve" placeholder="1st to serve">
+                1st to serve
+            </button>
+            <button type="button" class="buttons" id="second-to-serve" placeholder="2nd to serve">
+                2nd to serve
+            </button>
+        </div>
+
+        <div id="main-block" class="hidden">
+
+            <div class="score">
+                <div id="sets">
+                    <p>Match score</p>
+                    <p id="match-score"></p>
+                </div>
+                
+                <div id="current-set">
+                    <p>Current set score</p>
+                    <p id="set-score"></p>
+                </div>
+
+                <div id="current-game">
+                    <p>Current game score</p>
+                    <p id="game-score"></p>
+                </div>
+            </div>
+        
+            <div id="first-ball">
+                <!--green ball to symbolaze a serve turn-->
+            </div>
+    
+            <div id="second-ball">
+                <!--green ball to symbolaze a serve turn-->
+            </div>
+
+            <br>
+
+            <button type="button" class="buttons" id="first-button">
+                Point to 1
+            </button>
+            <button type="button" class="buttons" id="second-button">
+                Point to 2
+            </button>
+            
+            <div class="result-message">
+                <p class="message" id="message"></p>
+            </div>
+            
+            <div class="reset-button">
+                <button class="buttons" id="reset">Clear and start again</button>
+            </div>
+
+            <div class="result-message" id="game-log">
+                Game log:
+                <table id="game-table">
+                    <tbody id="table-body">
+                        <tr id="first-line">
+                            <td id="table-name-1">Player 1</td>
+                        </tr>
+                        <tr id="second-line">
+                            <td id="table-name-2">Player 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+        </div>
+
+        <script src="scoreScript.js"></script>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+/* make flexbox model */
+*,
+*::before,
+*::after {
+  margin: 0;
+  margin-top: var(--XXS);
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 24px
+}
+
+:root {
+  /* color variables */
+  --green-back: #1B6535;
+  --green: #558B7E;
+  --green-tennis: #C9EC93;
+  --button-border: #F0ECE3;
+  --button-color: #F4C7AB;
+  --main-text: #010A3D;
+/* unit variables */
+  --XXXS: 4px;
+  --XXS: 8px;
+  --XS: 12px;
+  --small: 16px;
+  --standart-small: 20px;
+  --standart: 28px;
+  --standart-large: 40px;
+  --large: 60px;
+  --XL: 100px;
+  --XXL: 160px;
+  --XXXL: 240px;
+}
+
+.hidden{
+  display: none;
+}
+
+.hideWithColor{
+  background-color: var(--green-back);
+}
+
+.appearWithColor{
+  background-color: var(--green-tennis);
+}
+
+body {
+  background-color: var(--green-back);
+  text-align: center;
+  color: var(--main-text);
+}
+
+.enter-info-conainer{
+  text-align: center;
+  margin-top: var(--XS);
+}
+
+label, .score, .result-message {
+  color: white
+}
+
+#second-name{
+  margin-bottom: var(--XS);
+}
+
+#first-ball, #second-ball {
+  width: var(--standart-small);
+  height: var(--standart-small);
+  border-radius: 50%;
+  display: inline-block
+}
+
+#first-ball{
+  margin-right: var(--XXXL);
+}
+
+#second-button, #second-to-serve{
+  margin-left: var(--XL);
+}
+
+#message{
+  height: var(--standart); 
+}
+
+button{
+  width: var(--XXL);
+  height: 85px;
+  cursor: pointer;
+  color: #0a0a23;
+  background-color: #feac32;
+  background-image: linear-gradient(#fecc4c, #ffac33);
+  border: 3px solid #feac32;
+  margin-top: 10px
+}
+
+.buttons:hover {
+  background-image: linear-gradient(#ffcc4c, #ed9107);
+}
+
+table{
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+}
+
+#zero-line, #first-line{
+  border-bottom:3px solid #ffffff;
+}
+
+#zero-line td, #first-line td, #second-line td{
+  border-right:3px solid #ffffff;
+  padding: var(--XS);
+}
